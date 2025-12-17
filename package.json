@@ -1,0 +1,41 @@
+{
+  "name": "skyline-probe",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "SkylineProbe – TypeScript/Vite project built with selected Coinbase SDKs.",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -p tsconfig.json && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@coinbase/onchainkit": "^1.1.0",
+    "@coinbase/wallet-sdk": "^4.3.7",
+    "@coinbase/x402": "^2.0.0",
+    "@coinbase/cdp-sdk": "^1.1.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "vite": "^5.0.8"
+  },
+  "dependencyDescriptions": {
+    "@coinbase/onchainkit": {
+      "repo": "coinbase/onchainkit",
+      "why": "Base-first UI helpers and utilities for onchain-enabled applications."
+    },
+    "@coinbase/wallet-sdk": {
+      "repo": "coinbase/wallet-sdk",
+      "why": "Integration and management of Coinbase Wallet connections."
+    },
+    "@coinbase/x402": {
+      "repo": "coinbase/x402",
+      "why": "HTTP-native x402 payment flow for gated or payable APIs."
+    },
+    "@coinbase/cdp-sdk": {
+      "repo": "coinbase/cdp-sdk",
+      "why": "SDK for interacting with Coinbase Developer Platform services."
+    }
+  }
+}
